@@ -13,15 +13,15 @@ library(reshape2) # required for melt, dcast
 uciDatasetDir <- "UCI HAR Dataset"
 
 # read and cbind train data
-#trainValues <- read.table(paste(uciDatasetDir, "train/X_train.txt", sep="/"))
-#trainActivities <- read.table(paste(uciDatasetDir, "train/y_train.txt", sep="/"))
-#trainSubjects <- read.table(paste(uciDatasetDir, "train/subject_train.txt", sep="/"))
+trainValues <- read.table(paste(uciDatasetDir, "train/X_train.txt", sep="/"))
+trainActivities <- read.table(paste(uciDatasetDir, "train/y_train.txt", sep="/"))
+trainSubjects <- read.table(paste(uciDatasetDir, "train/subject_train.txt", sep="/"))
 trainData <- cbind(trainSubjects, trainActivities, trainValues)
 
 # read and cbind test data
-#testValues <- read.table(paste(uciDatasetDir, "test/X_test.txt", sep="/"))
-#testActivities <- read.table(paste(uciDatasetDir, "test/y_test.txt", sep="/"))
-#testSubjects <- read.table(paste(uciDatasetDir, "test/subject_test.txt", sep="/"))
+testValues <- read.table(paste(uciDatasetDir, "test/X_test.txt", sep="/"))
+testActivities <- read.table(paste(uciDatasetDir, "test/y_test.txt", sep="/"))
+testSubjects <- read.table(paste(uciDatasetDir, "test/subject_test.txt", sep="/"))
 testData <- cbind(testSubjects, testActivities, testValues)
 
 # 1. Merges the training and the test sets to create one data set.
