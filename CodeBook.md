@@ -79,6 +79,7 @@ Original dataset was obtained from Getting and Cleaning Data URL: https://d396qu
 ## Transformations on original data to get *tidy_data.txt*
 
 All transformations were done by *run_analysis.R* script and they are:
+
 1. Read train and test parts of original dataset
 2. Merge train and test parts setting proper column names
 3. Extract only mean and standard deviation measures from merged dataset
